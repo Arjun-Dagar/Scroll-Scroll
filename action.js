@@ -16,7 +16,7 @@ function scrolling()
 
         if(sTop >= offset && sTop < (offset + height))
         {
-            let temp = (sTop - offset)/height;
+            let temp = (sTop - offset)/(height*(1.8));
             opac = 1 - temp;
             opac_li = (1- temp) + 0.2;
         }
