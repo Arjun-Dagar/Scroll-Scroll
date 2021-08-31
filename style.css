@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.scroll-div{
+    position: relative;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#nav-bar{
+    position: sticky;
+    z-index: 2;
+    width: 20%;
+    height: 70vh;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+}
+
+#nav-bar ul a{
+    text-decoration: none;
+}
+
+#nav-bar ul li{
+    list-style: none;
+    font-family: 'Founders Grotesk Mono',Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-left: 3px solid yellow;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.active{
+    opacity: 1;
+}
+
+#para-box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#para-box p{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibre,Arial,sans-serif;
+    font-size: 1.3rem;
+    line-height: 28px;
+    transition: all 0.3s;
+}
+
+#image-box{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    height: 80vh;
+    top: 10vh;
+}
+
+.image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    transition: all 0.3s;
+}
