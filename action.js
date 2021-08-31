@@ -7,27 +7,30 @@ $(window).on('scroll', function() {
 function scrolling()
 {
     var sTop = $(window).scrollTop();
-    $('p').each(function() {
+    $('#para-box p').each(function() {
         var offset = $(this).offset().top-1;
         var height = $(this).height();
 
         var opac;
         var opac_li;
+        var opac_p;
 
         if(sTop >= offset && sTop < (offset + height))
         {
             let temp = (sTop - offset)/(height*(1.8));
             opac = 1 - temp;
             opac_li = (1- temp) + 0.2;
+            opac_p =1;
         }
         else
         {
             opac = 0;
             opac_li = 0.3;
+            opac_p = 0;
         } 
         
         index = $(this).index();
-        document.querySelectorAll("p")[index].style.opacity = opac;
+        document.querySelectorAll("p")[index].style.opacity = opac_p;
         document.querySelectorAll("li")[index].style.opacity = opac_li;
         document.querySelectorAll("img")[index].style.opacity = opac;
 
