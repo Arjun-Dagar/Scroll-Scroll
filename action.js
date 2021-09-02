@@ -20,17 +20,17 @@ function scrolling()
             let temp = (sTop - offset)/(height*(1.8));
             opac = 1 - temp;
             opac_li = (1- temp) + 0.2;
-            opac_p =1;
+            // opac_p =1;
         }
         else
         {
             opac = 0;
             opac_li = 0.3;
-            opac_p = 0;
+            // opac_p = 0;
         } 
         
         index = $(this).index();
-        document.querySelectorAll("p")[index].style.opacity = opac_p;
+        // document.querySelectorAll("p")[index].style.opacity = opac_p;
         document.querySelectorAll("li")[index].style.opacity = opac_li;
         document.querySelectorAll("img")[index].style.opacity = opac;
 
